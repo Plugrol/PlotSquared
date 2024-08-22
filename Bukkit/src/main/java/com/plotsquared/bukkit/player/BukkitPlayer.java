@@ -350,7 +350,10 @@ public class BukkitPlayer extends PlotPlayer<Player> {
 
     @Override
     public @NonNull Audience getAudience() {
-        return BukkitUtil.BUKKIT_AUDIENCES.player(this.player);
+        // Kissen Team start - exclude adventure api
+        return this.player;
+        //return BukkitUtil.BUKKIT_AUDIENCES.player(this.player);
+        // Kissen Team end - exclude adventure api
     }
 
     @Override

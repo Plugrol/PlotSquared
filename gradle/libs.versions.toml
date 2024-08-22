@@ -8,7 +8,7 @@ gson = "2.10"
 guava = "31.1-jre"
 snakeyaml = "2.0"
 adventure = "4.17.0"
-adventure-bukkit = "4.3.4"
+# adventure-bukkit = "4.3.4" # KissenPvP Team - remove bukkit platform
 log4j = "2.19.0"
 
 # Plugins
@@ -51,7 +51,8 @@ guava = { group = "com.google.guava", name = "guava", version.ref = "guava" }
 snakeyaml = { group = "org.yaml", name = "snakeyaml", version.ref = "snakeyaml" }
 adventureApi = { group = "net.kyori", name = "adventure-api", version.ref = "adventure" }
 adventureMiniMessage = { group = "net.kyori", name = "adventure-text-minimessage", version.ref = "adventure" }
-adventureBukkit = { group = "net.kyori", name = "adventure-platform-bukkit", version.ref = "adventure-bukkit" }
+adventureLegacySerializer = { group = "net.kyori", name = "adventure-text-serializer-legacy", version.ref = "adventure" }
+# adventureBukkit = { group = "net.kyori", name = "adventure-platform-bukkit", version.ref = "adventure-bukkit" } # KissenPvP Team - remove bukkit platform
 log4j = { group = "org.apache.logging.log4j", name = "log4j-api", version.ref = "log4j" }
 
 # Plugins
