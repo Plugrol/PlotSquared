@@ -51,11 +51,11 @@ dependencies {
     implementation(libs.paster)
     implementation(libs.informativeAnnotations)
 
-    // Kissen Team start - exclude adventure api
+    // Kissen Team start - make plotsquared use paper's adventure api implementaton
     // Adventure
     //implementation(libs.adventureBukkit)
     implementation(libs.adventureLegacySerializer)
-    // Kissen Team end - exclude adventure api
+    // Kissen Team end - make plotsquared use paper's adventure api implementaton
 }
 
 tasks.processResources {
@@ -70,10 +70,10 @@ tasks.named<ShadowJar>("shadowJar") {
         exclude(dependency("org.checkerframework:"))
     }
 
-    // Kissen Team start - exclude adventure api
+    // Kissen Team start - make plotsquared use paper's adventure api implementaton
     // relocate("net.kyori.option", "com.plotsquared.core.configuration.option")
     // relocate("net.kyori.adventure", "com.plotsquared.core.configuration.adventure")
-    // Kissen Team end - exclude adventure api
+    // Kissen Team end - make plotsquared use paper's adventure api implementaton
     relocate("net.kyori.examination", "com.plotsquared.core.configuration.examination")
     relocate("io.papermc.lib", "com.plotsquared.bukkit.paperlib")
     relocate("org.bstats", "com.plotsquared.metrics")

@@ -350,10 +350,10 @@ public class BukkitPlayer extends PlotPlayer<Player> {
 
     @Override
     public @NonNull Audience getAudience() {
-        // Kissen Team start - exclude adventure api
+        // Kissen Team start - make plotsquared use paper's adventure api implementaton
         return this.player;
         //return BukkitUtil.BUKKIT_AUDIENCES.player(this.player);
-        // Kissen Team end - exclude adventure api
+        // Kissen Team end - make plotsquared use paper's adventure api implementaton
     }
 
     @Override

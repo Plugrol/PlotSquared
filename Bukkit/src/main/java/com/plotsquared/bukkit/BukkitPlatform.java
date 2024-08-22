@@ -1238,10 +1238,10 @@ public final class BukkitPlatform extends JavaPlugin implements Listener, PlotPl
 
     @Override
     public @NonNull Audience consoleAudience() {
-        // Kissen Team start - exclude adventure api
+        // Kissen Team start - make plotsquared use paper's adventure api implementaton
         return Bukkit.getConsoleSender();
         // return BukkitUtil.BUKKIT_AUDIENCES.console();
-        // Kissen Team end - exclude adventure api
+        // Kissen Team end - make plotsquared use paper's adventure api implementaton
     }
 
     @Override
